@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_principale.css">
+    <title>Ma présentation</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><img src="Mon-Site.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="https://re.linkedin.com/in/emmanuel-grondin-7bab822a2?trk=people-guest_people_search-card">LinkedIn</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="CV.html">CV</a></li>
+            </ul>
+            <li><a href="#"><img src="Mon-gif.gif" alt="" class="menu-icon"></a></li>
+        </nav>
+    </header>
+
+    <section class="text">
+        <h1>Voici <span class="auto-typing"></span></h1>
+        <p>Mon site vous permettra de mieux me connaître, <br>
+        Il sera utile pour présenter mon CV, mon LinkedIn, mes coordonnées et mon Portfolio.</p>
+        <a href="contact.html">Me contacter</a> 
+        <a href="CV.html" class="cv">Mon CV</a>
+    </section>
+
+    <div class="overlay">
+
+    </div>
+    <!--lien java script pout crée une animation de defilement de texte -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let typed = new Typed('.auto-typing', {
+            strings: ['Mon Portfolio', 'Mon site', 'Ma Présentation'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+            fadeOutClasse: 'typed-fade-out',
+            fadeOutDelay: 500
+        })
+    </script>
+</body>
+</html>
